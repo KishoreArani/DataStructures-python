@@ -34,3 +34,5 @@ class Stack:
         print(temp.data)
         return
 
+
+
