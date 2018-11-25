@@ -6,7 +6,7 @@ class node:
     def isempty(self):
         return (self.value == None)
     
-    def append(self,v):
+    def append(self,v): #similar to insertAtEnd
         if self.value == None:
             self.value = v
             return
@@ -39,7 +39,7 @@ class node:
         (self.next,newnode.next) = (newnode,self.next)
         return
 
-    def insertAtEnd(self,v):
+    def insertAtEnd(self,v): #similar to append
         if self.isempty():
             self.value = v
             return
