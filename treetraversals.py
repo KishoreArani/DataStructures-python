@@ -17,7 +17,7 @@ class Node:
                 if data > temp.data:
                     temp.right = Node(data)
                     return
-                if data < temp.data:
+                if data <= temp.data:
                     temp.left = Node(data)
                     return
             if data > temp.data:
@@ -25,7 +25,7 @@ class Node:
                     temp.right = Node(data)
                     return
                 temp = temp.right
-            if data < temp.data:
+            if data <= temp.data:
                 if temp.left == None:
                     temp.left = Node(data)
                     return
